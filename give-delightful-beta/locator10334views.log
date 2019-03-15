@@ -1,0 +1,7 @@
+
+[info 2019/02/27 13:26:28.741 PST <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024|0] members: [192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024]
+
+[info 2019/02/27 13:26:39.480 PST <DM-MemberEventInvoker> tid=0x17] A new member joined: 192.168.1.110(untie-polite-can:38349)<v1>:1025.  View[192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024|1] members: [192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024, 192.168.1.110(untie-polite-can:38349)<v1>:1025{lead}]
+
+[info 2019/02/27 13:27:35.420 PST <P2P message reader for 192.168.1.110(untie-polite-can:38349)<v1>:1025 shared ordered uid=2 port=51388> tid=0x74] server count: 1 connected client count: 0 client subscription queue count: 0
+  current servers : 192.168.1.110(untie-polite-can:38349)<v1>:1025 

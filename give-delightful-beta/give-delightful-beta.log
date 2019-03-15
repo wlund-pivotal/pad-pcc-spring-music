@@ -1,0 +1,549 @@
+
+[info 2019/02/27 13:26:26.500 PST give-delightful-beta <main> tid=0x1] Starting peer location for Distribution Locator on wlundsmcpro2018.nv.charter.com[10334]
+
+[info 2019/02/27 13:26:26.507 PST give-delightful-beta <main> tid=0x1] Starting Distribution Locator on wlundsmcpro2018.nv.charter.com[10334]
+
+[info 2019/02/27 13:26:26.508 PST give-delightful-beta <main> tid=0x1] Locator was created at Wed Feb 27 13:26:26 PST 2019
+
+[info 2019/02/27 13:26:26.508 PST give-delightful-beta <main> tid=0x1] Listening on port 10334 bound on address 0.0.0.0/0.0.0.0
+
+[info 2019/02/27 13:26:26.508 PST give-delightful-beta <main> tid=0x1] GemFire peer location service starting.  Other locators:   Locators preferred as coordinators: true  Network partition detection enabled: true  View persistence file: /Users/wlund/Dropbox/git-workspace/wxlund/spring-music-pcc/give-delightful-beta/locator10334view.dat
+
+[info 2019/02/27 13:26:26.509 PST give-delightful-beta <main> tid=0x1] recovery file not found: /Users/wlund/Dropbox/git-workspace/wxlund/spring-music-pcc/give-delightful-beta/locator10334view.dat
+
+[info 2019/02/27 13:26:26.510 PST give-delightful-beta <main> tid=0x1] Starting distributed system
+
+[info 2019/02/27 13:26:26.549 PST give-delightful-beta <main> tid=0x1] 
+  ---------------------------------------------------------------------------
+    
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with this
+    work for additional information regarding copyright ownership.
+     
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with the
+    License.  You may obtain a copy of the License at
+    
+    http://www.apache.org/licenses/LICENSE-2.0
+    
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
+    License for the specific language governing permissions and limitations
+    under the License.
+    
+  ---------------------------------------------------------------------------
+  Build-Date: 2018-10-05 17:40:11 +0000
+  Build-Id: root 14
+  Build-Java-Version: 1.8.0_171
+  Build-Platform: Linux 4.4.0-89-generic amd64
+  GemFire-Source-Date: 2018-09-26 16:27:26 +0000
+  GemFire-Source-Repository: support/9.6
+  GemFire-Source-Revision: b53c2fdc03f79b824d0c29679ff2a8e0774d48c3
+  Product-Name: Pivotal GemFire
+  Product-Version: 9.6.0
+  Source-Date: 2018-10-05 17:22:24 +0000
+  Source-Repository: support/9.6
+  Source-Revision: 60ca55e8ba2c9dcb582e55d2ec115cd71554d566
+  Native version: native code unavailable
+  Running on: wlundsmcpro2018.nv.charter.com/192.168.1.110, 12 cpu(s), x86_64 Mac OS X 10.13.6 
+  Communications version: 90
+  Process ID: 38343
+  User: wlund
+  Current dir: /Users/wlund/Dropbox/git-workspace/wxlund/spring-music-pcc/give-delightful-beta
+  Home dir: /Users/wlund
+  Command Line Parameters:
+    -Dgemfire.enable-cluster-configuration=true
+    -Dgemfire.load-cluster-configuration-from-dir=false
+    -Dgemfire.launcher.registerSignalHandlers=true
+    -Djava.awt.headless=true
+    -Dsun.rmi.dgc.server.gcInterval=9223372036854775806
+  Class Path:
+    /usr/local/Cellar/gemfire/9.6.0/lib/geode-core-9.6.0.jar
+    /usr/local/Cellar/gemfire/9.6.0/lib/geode-dependencies.jar
+    /usr/local/Cellar/gemfire/9.6.0/extensions/gemfire-greenplum-3.3.0.jar
+  Library Path:
+    /Users/wlund/Library/Java/Extensions
+    /Library/Java/Extensions
+    /Network/Library/Java/Extensions
+    /System/Library/Java/Extensions
+    /usr/lib/java
+    .
+  System Properties:
+      Locator.forceLocatorDMType = true
+      awt.toolkit = sun.lwawt.macosx.LWCToolkit
+      file.encoding = UTF-8
+      file.encoding.pkg = sun.io
+      file.separator = /
+      ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      gemfire.enable-cluster-configuration = true
+      gemfire.launcher.registerSignalHandlers = true
+      gemfire.load-cluster-configuration-from-dir = false
+      gopherProxySet = false
+      http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+      java.awt.headless = true
+      java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+      java.class.version = 52.0
+      java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/endorsed
+      java.ext.dirs = /Users/wlund/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+      java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre
+      java.io.tmpdir = /var/folders/ns/cln1d9xd7kj9w18zdxvnvpd40000gn/T/
+      java.runtime.name = Java(TM) SE Runtime Environment
+      java.runtime.version = 1.8.0_191-b12
+      java.specification.name = Java Platform API Specification
+      java.specification.vendor = Oracle Corporation
+      java.specification.version = 1.8
+      java.vendor = Oracle Corporation
+      java.vendor.url = http://java.oracle.com/
+      java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+      java.version = 1.8.0_191
+      java.vm.info = mixed mode
+      java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+      java.vm.specification.name = Java Virtual Machine Specification
+      java.vm.specification.vendor = Oracle Corporation
+      java.vm.specification.version = 1.8
+      java.vm.vendor = Oracle Corporation
+      java.vm.version = 25.191-b12
+      jna.platform.library.path = /usr/lib:/usr/lib
+      jnidispatch.path = /var/folders/ns/cln1d9xd7kj9w18zdxvnvpd40000gn/T/jna-113232374/jna4348671275905038180.tmp
+      line.separator = 
+  
+      os.version = 10.13.6
+      path.separator = :
+      socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+      sun.arch.data.model = 64
+      sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/classes
+      sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib
+      sun.cpu.endian = little
+      sun.cpu.isalist = 
+      sun.io.unicode.encoding = UnicodeBig
+      sun.java.command = org.apache.geode.distributed.LocatorLauncher start give-delightful-beta --port=10334
+      sun.java.launcher = SUN_STANDARD
+      sun.jnu.encoding = UTF-8
+      sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+      sun.os.patch.level = unknown
+      sun.rmi.dgc.server.gcInterval = 9223372036854775806
+      user.country = US
+      user.language = en
+      user.timezone = America/Los_Angeles
+  Log4J 2 Configuration:
+      jar:file:/usr/local/Cellar/gemfire/9.6.0/lib/geode-core-9.6.0.jar!/log4j2.xml
+  ---------------------------------------------------------------------------
+  
+
+[info 2019/02/27 13:26:26.557 PST give-delightful-beta <main> tid=0x1] Startup Configuration:
+   ### GemFire Properties defined with system property ###
+  enable-cluster-configuration=true
+  load-cluster-configuration-from-dir=false
+  ### GemFire Properties defined with api ###
+  cache-xml-file=
+  locators=192.168.1.110[10334]
+  name=give-delightful-beta
+  ### GemFire Properties defined with launcher ###
+  log-file=/Users/wlund/Dropbox/git-workspace/wxlund/spring-music-pcc/give-delightful-beta/give-delightful-beta.log
+  ### GemFire Properties using default values ###
+  ack-severe-alert-threshold=0
+  ack-wait-threshold=15
+  archive-disk-space-limit=0
+  archive-file-size-limit=0
+  async-distribution-timeout=0
+  async-max-queue-size=8
+  async-queue-timeout=60000
+  bind-address=
+  cluster-configuration-dir=
+  cluster-ssl-ciphers=any
+  cluster-ssl-enabled=false
+  cluster-ssl-keystore=
+  cluster-ssl-keystore-password=
+  cluster-ssl-keystore-type=
+  cluster-ssl-protocols=any
+  cluster-ssl-require-authentication=true
+  cluster-ssl-truststore=
+  cluster-ssl-truststore-password=
+  conflate-events=server
+  conserve-sockets=true
+  delta-propagation=true
+  deploy-working-dir=/Users/wlund/Dropbox/git-workspace/wxlund/spring-music-pcc/give-delightful-beta
+  disable-auto-reconnect=false
+  disable-tcp=false
+  distributed-system-id=-1
+  distributed-transactions=false
+  durable-client-id=
+  durable-client-timeout=300
+  enable-network-partition-detection=true
+  enable-time-statistics=false
+  enforce-unique-host=false
+  gateway-ssl-ciphers=any
+  gateway-ssl-enabled=false
+  gateway-ssl-keystore=
+  gateway-ssl-keystore-password=
+  gateway-ssl-keystore-type=
+  gateway-ssl-protocols=any
+  gateway-ssl-require-authentication=true
+  gateway-ssl-truststore=
+  gateway-ssl-truststore-password=
+  groups=
+  http-service-bind-address=
+  http-service-port=7070
+  http-service-ssl-ciphers=any
+  http-service-ssl-enabled=false
+  http-service-ssl-keystore=
+  http-service-ssl-keystore-password=
+  http-service-ssl-keystore-type=
+  http-service-ssl-protocols=any
+  http-service-ssl-require-authentication=false
+  http-service-ssl-truststore=
+  http-service-ssl-truststore-password=
+  jmx-manager=true
+  jmx-manager-access-file=
+  jmx-manager-bind-address=
+  jmx-manager-hostname-for-clients=
+  jmx-manager-http-port=7070
+  jmx-manager-password-file=
+  jmx-manager-port=1099
+  jmx-manager-ssl-ciphers=any
+  jmx-manager-ssl-enabled=false
+  jmx-manager-ssl-keystore=
+  jmx-manager-ssl-keystore-password=
+  jmx-manager-ssl-keystore-type=
+  jmx-manager-ssl-protocols=any
+  jmx-manager-ssl-require-authentication=true
+  jmx-manager-ssl-truststore=
+  jmx-manager-ssl-truststore-password=
+  jmx-manager-start=false
+  jmx-manager-update-rate=2000
+  locator-wait-time=0
+  lock-memory=false
+  log-disk-space-limit=0
+  log-file-size-limit=0
+  log-level=config
+  max-num-reconnect-tries=3
+  max-wait-time-reconnect=60000
+  mcast-address=239.192.81.1
+  mcast-flow-control=1048576, 0.25, 5000
+  mcast-port=0
+  mcast-recv-buffer-size=1048576
+  mcast-send-buffer-size=65535
+  mcast-ttl=32
+  member-timeout=5000
+  membership-port-range=1024-65535
+  memcached-bind-address=
+  memcached-port=0
+  memcached-protocol=ASCII
+  off-heap-memory-size=
+  redis-bind-address=
+  redis-password=
+  redis-port=0
+  redundancy-zone=
+  remote-locators=
+  remove-unresponsive-client=false
+  roles=
+  security-client-accessor=
+  security-client-accessor-pp=
+  security-client-auth-init=
+  security-client-authenticator=
+  security-client-dhalgo=
+  security-log-file=
+  security-log-level=config
+  security-manager=
+  security-peer-auth-init=
+  security-peer-authenticator=
+  security-peer-verifymember-timeout=1000
+  security-post-processor=
+  security-udp-dhalgo=
+  serializable-object-filter=!*
+  server-bind-address=
+  server-ssl-ciphers=any
+  server-ssl-enabled=false
+  server-ssl-keystore=
+  server-ssl-keystore-password=
+  server-ssl-keystore-type=
+  server-ssl-protocols=any
+  server-ssl-require-authentication=true
+  server-ssl-truststore=
+  server-ssl-truststore-password=
+  socket-buffer-size=32768
+  socket-lease-time=60000
+  ssl-ciphers=any
+  ssl-cluster-alias=
+  ssl-default-alias=
+  ssl-enabled-components=
+  ssl-endpoint-identification-enabled=false
+  ssl-gateway-alias=
+  ssl-jmx-alias=
+  ssl-keystore=
+  ssl-keystore-password=
+  ssl-keystore-type=
+  ssl-locator-alias=
+  ssl-protocols=any
+  ssl-require-authentication=true
+  ssl-server-alias=
+  ssl-truststore=
+  ssl-truststore-password=
+  ssl-truststore-type=
+  ssl-web-alias=
+  ssl-web-require-authentication=false
+  start-dev-rest-api=false
+  start-locator=
+  statistic-archive-file=
+  statistic-sample-rate=1000
+  statistic-sampling-enabled=true
+  tcp-port=0
+  thread-monitor-enabled=true
+  thread-monitor-interval-ms=60000
+  thread-monitor-time-limit-ms=30000
+  udp-fragment-size=60000
+  udp-recv-buffer-size=1048576
+  udp-send-buffer-size=65535
+  use-cluster-configuration=true
+  user-command-packages=
+  validate-serializable-objects=false
+  
+
+[info 2019/02/27 13:26:26.560 PST give-delightful-beta <main> tid=0x1] initializing InternalDataSerializer with 4 services
+
+[info 2019/02/27 13:26:26.581 PST give-delightful-beta <main> tid=0x1] [ThreadsMonitor] a New Monitor object and process were created.
+  
+
+[info 2019/02/27 13:26:26.581 PST give-delightful-beta <main> tid=0x1] Serial Queue info : THROTTLE_PERCENT: 0.75 SERIAL_QUEUE_BYTE_LIMIT :41943040 SERIAL_QUEUE_THROTTLE :31457280 TOTAL_SERIAL_QUEUE_BYTE_LIMIT :83886080 TOTAL_SERIAL_QUEUE_THROTTLE :31457280 SERIAL_QUEUE_SIZE_LIMIT :20000 SERIAL_QUEUE_SIZE_THROTTLE :15000
+
+[info 2019/02/27 13:26:26.672 PST give-delightful-beta <main> tid=0x1] Starting membership services
+
+[info 2019/02/27 13:26:26.742 PST give-delightful-beta <main> tid=0x1] JGroups channel created (took 70ms)
+
+[info 2019/02/27 13:26:26.762 PST give-delightful-beta <main> tid=0x1] GemFire P2P Listener started on /192.168.1.110:63943
+
+[info 2019/02/27 13:26:26.762 PST give-delightful-beta <main> tid=0x1] This member is hosting a locator will be preferred as a membership coordinator
+
+[info 2019/02/27 13:26:26.763 PST give-delightful-beta <Geode Failure Detection Server thread 0> tid=0x20] Started failure detection server thread on /192.168.1.110:34346.
+
+[info 2019/02/27 13:26:26.764 PST give-delightful-beta <main> tid=0x1] Peer locator is connecting to local membership services with ID 192.168.1.110(give-delightful-beta:38343:locator)<ec>:1024
+
+[info 2019/02/27 13:26:26.777 PST give-delightful-beta <main> tid=0x1] This member is becoming the membership coordinator with address 192.168.1.110(give-delightful-beta:38343:locator)<ec>:1024
+
+[info 2019/02/27 13:26:26.777 PST give-delightful-beta <main> tid=0x1] received new view: View[192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024|0] members: [192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024]
+  old view is: null
+
+[info 2019/02/27 13:26:26.778 PST give-delightful-beta <main> tid=0x1] Peer locator received new membership view: View[192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024|0] members: [192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024]
+
+[info 2019/02/27 13:26:26.779 PST give-delightful-beta <main> tid=0x1] Failure detection is now watching 192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024
+
+[info 2019/02/27 13:26:26.788 PST give-delightful-beta <main> tid=0x1] ViewCreator starting on:192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024
+
+[info 2019/02/27 13:26:26.788 PST give-delightful-beta <Geode Membership View Creator> tid=0x24] View Creator thread is starting
+
+[info 2019/02/27 13:26:26.788 PST give-delightful-beta <main> tid=0x1] Joined the distributed system (took  24  ms)
+
+[info 2019/02/27 13:26:26.789 PST give-delightful-beta <main> tid=0x1] Finished joining (took 25ms).
+
+[info 2019/02/27 13:26:26.789 PST give-delightful-beta <main> tid=0x1] Starting DistributionManager 192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024.  (took 201 ms)
+
+[info 2019/02/27 13:26:26.790 PST give-delightful-beta <Geode Membership View Creator> tid=0x24] no recipients for new view aside from myself
+
+[info 2019/02/27 13:26:26.791 PST give-delightful-beta <main> tid=0x1] Initial (distribution manager) view =  View[192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024|0] members: [192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024]
+
+[info 2019/02/27 13:26:26.791 PST give-delightful-beta <main> tid=0x1] Admitting member <192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024>. Now there are 1 non-admin member(s).
+
+[info 2019/02/27 13:26:26.792 PST give-delightful-beta <main> tid=0x1] 192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024 is the elder and the only member.
+
+[info 2019/02/27 13:26:26.794 PST give-delightful-beta <main> tid=0x1] Did not hear back from any other system. I am the first one.
+
+[info 2019/02/27 13:26:26.795 PST give-delightful-beta <main> tid=0x1] DistributionManager 192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024 started on wlundsmcpro2018.nv.charter.com[10334]. There were 0 other DMs. others: []  (VERBOSE, took 229 ms)  (locator)
+
+[info 2019/02/27 13:26:26.807 PST give-delightful-beta <Thread-5 StatSampler> tid=0x27] Disabling statistic archival.
+
+[info 2019/02/27 13:26:26.808 PST give-delightful-beta <main> tid=0x1] Creating cache for locator.
+
+[info 2019/02/27 13:26:27.029 PST give-delightful-beta <main> tid=0x1] Initializing region _monitoringRegion_192.168.1.110<v0>1024
+
+[info 2019/02/27 13:26:27.032 PST give-delightful-beta <main> tid=0x1] Initialization of region _monitoringRegion_192.168.1.110<v0>1024 completed
+
+[info 2019/02/27 13:26:27.529 PST give-delightful-beta <main> tid=0x1] Initialized cache service org.apache.geode.connectors.jdbc.internal.JdbcConnectorServiceImpl
+
+[info 2019/02/27 13:26:27.544 PST give-delightful-beta <main> tid=0x1] Initialized cache service org.apache.geode.cache.lucene.internal.LuceneServiceImpl
+
+[info 2019/02/27 13:26:27.546 PST give-delightful-beta <main> tid=0x1] Initialized cache service com.gemstone.gemfire.OldClientSupportProvider
+
+[info 2019/02/27 13:26:27.546 PST give-delightful-beta <main> tid=0x1] Loading previously deployed jars
+
+[info 2019/02/27 13:26:27.561 PST give-delightful-beta <main> tid=0x1] SharedConfigStatusRequestHandler installed
+
+[info 2019/02/27 13:26:28.639 PST give-delightful-beta <main> tid=0x1] Created disk store cluster_config with unique id b6f2a300423a402a-a93d293539962b6f
+
+[info 2019/02/27 13:26:28.650 PST give-delightful-beta <main> tid=0x1] recovery region initialization took 1 ms
+
+[info 2019/02/27 13:26:28.671 PST give-delightful-beta <main> tid=0x1] Created oplog#1 drf for disk store cluster_config.
+
+[info 2019/02/27 13:26:28.675 PST give-delightful-beta <main> tid=0x1] Created oplog#1 crf for disk store cluster_config.
+
+[info 2019/02/27 13:26:28.679 PST give-delightful-beta <main> tid=0x1] Initializing region _ConfigurationRegion
+
+[info 2019/02/27 13:26:28.683 PST give-delightful-beta <main> tid=0x1] Region /_ConfigurationRegion was created on this member with the persistent id /192.168.1.110:/Users/wlund/Dropbox/git-workspace/wxlund/spring-music-pcc/give-delightful-beta/ConfigDiskDir_give-delightful-beta created at timestamp 1551302788679 version 0 diskStoreId b6f2a300423a402a-a93d293539962b6f name give-delightful-beta.
+
+[info 2019/02/27 13:26:28.688 PST give-delightful-beta <main> tid=0x1] Initialization of region _ConfigurationRegion completed
+
+[info 2019/02/27 13:26:28.735 PST give-delightful-beta <main> tid=0x1] Cluster configuration service start up completed successfully and is now running ....
+
+[info 2019/02/27 13:26:28.736 PST give-delightful-beta <main> tid=0x1] Locator started on  192.168.1.110[10334]
+
+[info 2019/02/27 13:26:28.736 PST give-delightful-beta <main> tid=0x1] Starting server location for Distribution Locator on wlundsmcpro2018.nv.charter.com[10334]
+
+[info 2019/02/27 13:26:30.528 PST give-delightful-beta <locator request thread[1]> tid=0x23] GEODE_HOME:/usr/local/Cellar/gemfire/9.6.0
+
+[info 2019/02/27 13:26:30.530 PST give-delightful-beta <locator request thread[1]> tid=0x23] Located war: geode-web at location: /usr/local/Cellar/gemfire/9.6.0/tools/Extensions/geode-web-9.6.0.war
+
+[info 2019/02/27 13:26:30.530 PST give-delightful-beta <locator request thread[1]> tid=0x23] GEODE_HOME:/usr/local/Cellar/gemfire/9.6.0
+
+[info 2019/02/27 13:26:30.531 PST give-delightful-beta <locator request thread[1]> tid=0x23] Located war: geode-pulse at location: /usr/local/Cellar/gemfire/9.6.0/tools/Pulse/geode-pulse-9.6.0.war
+
+[info 2019/02/27 13:26:30.531 PST give-delightful-beta <locator request thread[1]> tid=0x23] GEODE_HOME:/usr/local/Cellar/gemfire/9.6.0
+
+[info 2019/02/27 13:26:30.531 PST give-delightful-beta <locator request thread[1]> tid=0x23] Located war: geode-web-api at location: /usr/local/Cellar/gemfire/9.6.0/tools/Extensions/geode-web-api-9.6.0.war
+
+[info 2019/02/27 13:26:30.992 PST give-delightful-beta <locator request thread[1]> tid=0x23] FrameworkServlet 'geode-mgmt': initialization started
+
+[info 2019/02/27 13:26:31.040 PST give-delightful-beta <locator request thread[1]> tid=0x23] Refreshing WebApplicationContext for namespace 'geode-mgmt-servlet': startup date [Wed Feb 27 13:26:31 PST 2019]; root of context hierarchy
+
+[info 2019/02/27 13:26:31.076 PST give-delightful-beta <locator request thread[1]> tid=0x23] Loading XML bean definitions from ServletContext resource [/WEB-INF/geode-mgmt-servlet.xml]
+
+[info 2019/02/27 13:26:31.496 PST give-delightful-beta <locator request thread[1]> tid=0x23] Initializing ExecutorService  'asyncTaskExecutor'
+
+[info 2019/02/27 13:26:31.641 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/mbean/operation],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.apache.geode.management.internal.web.controllers.ShellCommandsController.invoke(java.lang.String,java.lang.String,java.lang.String[],java.lang.Object[]) throws javax.management.MalformedObjectNameException,javax.management.MBeanException,javax.management.InstanceNotFoundException,javax.management.ReflectionException,java.io.IOException
+
+[info 2019/02/27 13:26:31.643 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/version],methods=[GET]}" onto public java.lang.String org.apache.geode.management.internal.web.controllers.ShellCommandsController.version()
+
+[info 2019/02/27 13:26:31.643 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/management/commands],methods=[GET || POST]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> org.apache.geode.management.internal.web.controllers.ShellCommandsController.command(java.lang.String,org.springframework.web.multipart.MultipartFile[]) throws java.io.IOException
+
+[info 2019/02/27 13:26:31.644 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/mbean/query],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.apache.geode.management.internal.web.controllers.ShellCommandsController.queryNames(org.apache.geode.management.internal.web.domain.QueryParameterSource) throws java.io.IOException
+
+[info 2019/02/27 13:26:31.644 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/mbean/attribute],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> org.apache.geode.management.internal.web.controllers.ShellCommandsController.getAttribute(java.lang.String,java.lang.String) throws javax.management.AttributeNotFoundException,javax.management.MBeanException,javax.management.ReflectionException,javax.management.InstanceNotFoundException,java.io.IOException,javax.management.MalformedObjectNameException
+
+[info 2019/02/27 13:26:31.645 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/regions],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.apache.geode.management.internal.web.controllers.ShellCommandsController.createRegion(java.lang.String,java.lang.Boolean,org.apache.geode.cache.RegionShortcut) throws java.io.IOException
+
+[info 2019/02/27 13:26:31.645 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/indexes],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.apache.geode.management.internal.web.controllers.ShellCommandsController.createIndex(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+
+[info 2019/02/27 13:26:31.646 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/ping],methods=[GET || HEAD]}" onto public org.springframework.http.ResponseEntity<java.lang.String> org.apache.geode.management.internal.web.controllers.ShellCommandsController.ping()
+
+[info 2019/02/27 13:26:31.646 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/version/full],methods=[GET]}" onto public java.lang.String org.apache.geode.management.internal.web.controllers.ShellCommandsController.fullVersion()
+
+[info 2019/02/27 13:26:31.647 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/version/release],methods=[GET]}" onto public java.lang.String org.apache.geode.management.internal.web.controllers.ShellCommandsController.releaseVersion()
+
+[info 2019/02/27 13:26:31.704 PST give-delightful-beta <locator request thread[1]> tid=0x23] Looking for @ControllerAdvice: WebApplicationContext for namespace 'geode-mgmt-servlet': startup date [Wed Feb 27 13:26:31 PST 2019]; root of context hierarchy
+
+[info 2019/02/27 13:26:31.741 PST give-delightful-beta <locator request thread[1]> tid=0x23] Looking for @ControllerAdvice: WebApplicationContext for namespace 'geode-mgmt-servlet': startup date [Wed Feb 27 13:26:31 PST 2019]; root of context hierarchy
+
+[info 2019/02/27 13:26:31.815 PST give-delightful-beta <locator request thread[1]> tid=0x23] FrameworkServlet 'geode-mgmt': initialization completed in 823 ms
+
+[info 2019/02/27 13:26:31.990 PST give-delightful-beta <locator request thread[1]> tid=0x23] FrameworkServlet 'geode-mgmt': initialization started
+
+[info 2019/02/27 13:26:32.000 PST give-delightful-beta <locator request thread[1]> tid=0x23] Refreshing WebApplicationContext for namespace 'geode-mgmt-servlet': startup date [Wed Feb 27 13:26:32 PST 2019]; root of context hierarchy
+
+[info 2019/02/27 13:26:32.024 PST give-delightful-beta <locator request thread[1]> tid=0x23] Loading XML bean definitions from ServletContext resource [/WEB-INF/geode-mgmt-servlet.xml]
+
+[info 2019/02/27 13:26:32.221 PST give-delightful-beta <locator request thread[1]> tid=0x23] Initializing ExecutorService  'asyncTaskExecutor'
+
+[info 2019/02/27 13:26:32.488 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/mbean/operation],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.apache.geode.management.internal.web.controllers.ShellCommandsController.invoke(java.lang.String,java.lang.String,java.lang.String[],java.lang.Object[]) throws javax.management.MalformedObjectNameException,javax.management.MBeanException,javax.management.InstanceNotFoundException,javax.management.ReflectionException,java.io.IOException
+
+[info 2019/02/27 13:26:32.489 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/version],methods=[GET]}" onto public java.lang.String org.apache.geode.management.internal.web.controllers.ShellCommandsController.version()
+
+[info 2019/02/27 13:26:32.489 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/management/commands],methods=[GET || POST]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> org.apache.geode.management.internal.web.controllers.ShellCommandsController.command(java.lang.String,org.springframework.web.multipart.MultipartFile[]) throws java.io.IOException
+
+[info 2019/02/27 13:26:32.489 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/mbean/query],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.apache.geode.management.internal.web.controllers.ShellCommandsController.queryNames(org.apache.geode.management.internal.web.domain.QueryParameterSource) throws java.io.IOException
+
+[info 2019/02/27 13:26:32.490 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/mbean/attribute],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> org.apache.geode.management.internal.web.controllers.ShellCommandsController.getAttribute(java.lang.String,java.lang.String) throws javax.management.AttributeNotFoundException,javax.management.MBeanException,javax.management.ReflectionException,javax.management.InstanceNotFoundException,java.io.IOException,javax.management.MalformedObjectNameException
+
+[info 2019/02/27 13:26:32.490 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/regions],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.apache.geode.management.internal.web.controllers.ShellCommandsController.createRegion(java.lang.String,java.lang.Boolean,org.apache.geode.cache.RegionShortcut) throws java.io.IOException
+
+[info 2019/02/27 13:26:32.491 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/indexes],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.apache.geode.management.internal.web.controllers.ShellCommandsController.createIndex(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+
+[info 2019/02/27 13:26:32.491 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/ping],methods=[GET || HEAD]}" onto public org.springframework.http.ResponseEntity<java.lang.String> org.apache.geode.management.internal.web.controllers.ShellCommandsController.ping()
+
+[info 2019/02/27 13:26:32.491 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/version/full],methods=[GET]}" onto public java.lang.String org.apache.geode.management.internal.web.controllers.ShellCommandsController.fullVersion()
+
+[info 2019/02/27 13:26:32.492 PST give-delightful-beta <locator request thread[1]> tid=0x23] Mapped "{[/v1/version/release],methods=[GET]}" onto public java.lang.String org.apache.geode.management.internal.web.controllers.ShellCommandsController.releaseVersion()
+
+[info 2019/02/27 13:26:32.538 PST give-delightful-beta <locator request thread[1]> tid=0x23] Looking for @ControllerAdvice: WebApplicationContext for namespace 'geode-mgmt-servlet': startup date [Wed Feb 27 13:26:32 PST 2019]; root of context hierarchy
+
+[info 2019/02/27 13:26:32.570 PST give-delightful-beta <locator request thread[1]> tid=0x23] Looking for @ControllerAdvice: WebApplicationContext for namespace 'geode-mgmt-servlet': startup date [Wed Feb 27 13:26:32 PST 2019]; root of context hierarchy
+
+[info 2019/02/27 13:26:32.641 PST give-delightful-beta <locator request thread[1]> tid=0x23] FrameworkServlet 'geode-mgmt': initialization completed in 651 ms
+
+[info 2019/02/27 13:26:36.849 PST give-delightful-beta <locator request thread[1]> tid=0x23] Registered AccessControlMBean on GemFire:service=AccessControl,type=Distributed
+
+[info 2019/02/27 13:26:36.852 PST give-delightful-beta <locator request thread[1]> tid=0x23] Registered FileUploaderMBean on GemFire:service=FileUploader,type=Distributed
+
+[info 2019/02/27 13:26:39.162 PST give-delightful-beta <unicast receiver,wlundsmcpro2018-33536> tid=0x1c] Received a join request from 192.168.1.110(untie-polite-can:38349):1025
+
+[info 2019/02/27 13:26:39.465 PST give-delightful-beta <Geode Membership View Creator> tid=0x24] View Creator is processing 1 requests for the next membership view
+
+[info 2019/02/27 13:26:39.466 PST give-delightful-beta <Geode Membership View Creator> tid=0x24] preparing new view View[192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024|1] members: [192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024, 192.168.1.110(untie-polite-can:38349)<v1>:1025{lead}]
+
+[info 2019/02/27 13:26:39.476 PST give-delightful-beta <Geode Membership View Creator> tid=0x24] finished waiting for responses to view preparation
+
+[info 2019/02/27 13:26:39.476 PST give-delightful-beta <Geode Membership View Creator> tid=0x24] received new view: View[192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024|1] members: [192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024, 192.168.1.110(untie-polite-can:38349)<v1>:1025{lead}]
+  old view is: View[192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024|0] members: [192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024]
+
+[info 2019/02/27 13:26:39.476 PST give-delightful-beta <Geode Membership View Creator> tid=0x24] Peer locator received new membership view: View[192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024|1] members: [192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024, 192.168.1.110(untie-polite-can:38349)<v1>:1025{lead}]
+
+[info 2019/02/27 13:26:39.477 PST give-delightful-beta <Geode Membership View Creator> tid=0x24] Failure detection is now watching 192.168.1.110(untie-polite-can:38349)<v1>:1025
+
+[info 2019/02/27 13:26:39.478 PST give-delightful-beta <Geode Membership View Creator> tid=0x24] sending new view View[192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024|1] members: [192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024, 192.168.1.110(untie-polite-can:38349)<v1>:1025{lead}]
+
+[info 2019/02/27 13:26:39.478 PST give-delightful-beta <View Message Processor> tid=0x6b] Membership: Processing addition < 192.168.1.110(untie-polite-can:38349)<v1>:1025 >
+
+[info 2019/02/27 13:26:39.478 PST give-delightful-beta <View Message Processor> tid=0x6b] Admitting member <192.168.1.110(untie-polite-can:38349)<v1>:1025>. Now there are 2 non-admin member(s).
+
+[info 2019/02/27 13:26:39.481 PST give-delightful-beta <pool-3-thread-1> tid=0x6c] Initializing region _monitoringRegion_192.168.1.110<v1>1025
+
+[info 2019/02/27 13:26:39.502 PST give-delightful-beta <Pooled High Priority Message Processor 1> tid=0x70] Member 192.168.1.110(untie-polite-can:38349)<v1>:1025 is equivalent or in the same redundancy zone.
+
+[info 2019/02/27 13:26:39.527 PST give-delightful-beta <pool-3-thread-1> tid=0x6c] Initialization of region _monitoringRegion_192.168.1.110<v1>1025 completed
+
+[info 2019/02/27 13:26:39.532 PST give-delightful-beta <pool-3-thread-1> tid=0x6c] Initializing region _notificationRegion_192.168.1.110<v1>1025
+
+[info 2019/02/27 13:26:39.534 PST give-delightful-beta <pool-3-thread-1> tid=0x6c] Initialization of region _notificationRegion_192.168.1.110<v1>1025 completed
+
+[info 2019/02/27 13:26:39.558 PST give-delightful-beta <Function Execution Processor1> tid=0x71] Received request for configuration: []
+
+[info 2019/02/27 13:26:39.559 PST give-delightful-beta <Function Execution Processor1> tid=0x71] Building up configuration response with following configurations: [cluster]
+
+[info 2019/02/27 13:28:04.251 PST give-delightful-beta <Geode Failure Detection Scheduler> tid=0x1d] Failure detection is now watching 192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024
+
+[info 2019/02/27 13:28:04.253 PST give-delightful-beta <Geode Failure Detection thread 1> tid=0x79] Failure detection is now watching 192.168.1.110(untie-polite-can:38349)<v1>:1025
+
+[info 2019/02/27 13:44:45.365 PST give-delightful-beta <Thread-45> tid=0x99] Closing WebApplicationContext for namespace 'geode-mgmt-servlet': startup date [Wed Feb 27 13:26:32 PST 2019]; root of context hierarchy
+
+[info 2019/02/27 13:44:45.366 PST give-delightful-beta <Thread-45> tid=0x99] Shutting down ExecutorService 'asyncTaskExecutor'
+
+[info 2019/02/27 13:44:45.370 PST give-delightful-beta <Thread-45> tid=0x99] Closing WebApplicationContext for namespace 'geode-mgmt-servlet': startup date [Wed Feb 27 13:26:31 PST 2019]; root of context hierarchy
+
+[info 2019/02/27 13:44:45.371 PST give-delightful-beta <Thread-45> tid=0x99] Shutting down ExecutorService 'asyncTaskExecutor'
+
+[info 2019/02/27 13:44:45.378 PST give-delightful-beta <Thread-45> tid=0x99] GemFireCache[id = 437630857; isClosing = true; isShutDownAll = false; created = Wed Feb 27 13:26:26 PST 2019; server = false; copyOnRead = false; lockLease = 120; lockTimeout = 60]: Now closing.
+
+[info 2019/02/27 13:44:45.394 PST give-delightful-beta <Thread-45> tid=0x99] Created oplog#1 krf for disk store cluster_config.
+
+[info 2019/02/27 13:44:45.401 PST give-delightful-beta <org.apache.geode.distributed.internal.InternalLocator$1@664a9613> tid=0x9b] Stopping Distribution Locator on wlundsmcpro2018.nv.charter.com[10334]
+
+[info 2019/02/27 13:44:45.402 PST give-delightful-beta <Distribution Locator on wlundsmcpro2018.nv.charter.com> tid=0xe] locator shutting down
+
+[info 2019/02/27 13:44:45.403 PST give-delightful-beta <Distribution Locator on wlundsmcpro2018.nv.charter.com> tid=0xe] Closing locator's cache
+
+[info 2019/02/27 13:44:45.404 PST give-delightful-beta <org.apache.geode.distributed.internal.InternalLocator$1@664a9613> tid=0x9b] Distribution Locator on wlundsmcpro2018.nv.charter.com[10334]  is stopped
+
+[info 2019/02/27 13:44:45.405 PST give-delightful-beta <Thread-45> tid=0x99] Shutting down DistributionManager 192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024. 
+
+[info 2019/02/27 13:44:45.511 PST give-delightful-beta <Thread-45> tid=0x99] Now closing distribution for 192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024
+
+[info 2019/02/27 13:44:45.512 PST give-delightful-beta <Thread-45> tid=0x99] Stopping membership services
+
+[info 2019/02/27 13:44:45.513 PST give-delightful-beta <Thread-45> tid=0x99] GMSHealthMonitor server socket is closed in stopServices().
+
+[info 2019/02/27 13:44:45.513 PST give-delightful-beta <Geode Failure Detection Server thread 0> tid=0x20] GMSHealthMonitor server thread exiting
+
+[info 2019/02/27 13:44:45.513 PST give-delightful-beta <Thread-45> tid=0x99] GMSHealthMonitor serverSocketExecutor is terminated
+
+[info 2019/02/27 13:44:45.519 PST give-delightful-beta <Thread-45> tid=0x99] DistributionManager stopped in 114ms.
+
+[info 2019/02/27 13:44:45.520 PST give-delightful-beta <Thread-45> tid=0x99] Marking DistributionManager 192.168.1.110(give-delightful-beta:38343:locator)<ec><v0>:1024 as closed.

@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.cloudfoundry.samples.music.ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-02-27T21:25:15" hostname="wlundsmcpro2018.nv.charter.com" time="0.116">
+  <properties/>
+  <testcase name="contextLoads" classname="org.cloudfoundry.samples.music.ApplicationTests" time="0.116"/>
+  <system-out><![CDATA[[info 2019/02/27 13:25:10.388 PST <Test worker> tid=0xd] Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.cloudfoundry.samples.music.ApplicationTests], using SpringBootContextLoader
+
+[info 2019/02/27 13:25:10.396 PST <Test worker> tid=0xd] Could not detect default resource locations for test class [org.cloudfoundry.samples.music.ApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+
+[info 2019/02/27 13:25:10.397 PST <Test worker> tid=0xd] Could not detect default configuration classes for test class [org.cloudfoundry.samples.music.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+
+[info 2019/02/27 13:25:10.478 PST <Test worker> tid=0xd] Found @SpringBootConfiguration org.cloudfoundry.samples.music.Application for test class org.cloudfoundry.samples.music.ApplicationTests
+
+[info 2019/02/27 13:25:10.558 PST <Test worker> tid=0xd] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+
+[info 2019/02/27 13:25:10.573 PST <Test worker> tid=0xd] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2cc675fd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6a0ebd58, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7a9c93c6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@468567bc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@59f38b0c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@46880917, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5814a0a3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3541849a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@70afc2d5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7669bd66, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@b051ab0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@32592a1e]
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.6.RELEASE)
+
+[warn 2019/02/27 13:25:10.928 PST <Test worker> tid=0xd] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/wlund/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.geode/geode-json/1.2.1/bdb4c262e4ce6bb3b22e0f511cfb133a65fa0c04/geode-json-1.2.1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+
+[info 2019/02/27 13:25:10.943 PST <Test worker> tid=0xd] Starting ApplicationTests on wlundsmcpro2018.nv.charter.com with PID 38249 (started by wlund in /Users/wlund/Dropbox/git-workspace/wxlund/spring-music-pcc)
+
+[info 2019/02/27 13:25:10.944 PST <Test worker> tid=0xd] No active profile set, falling back to default profiles: default
+
+[info 2019/02/27 13:25:10.979 PST <Test worker> tid=0xd] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@581abea4: startup date [Wed Feb 27 13:25:10 PST 2019]; root of context hierarchy
+
+[warn 2019/02/27 13:25:12.318 PST <Test worker> tid=0xd] @Bean method PdxConfiguration.pdxDiskStoreAwareBeanFactoryPostProcessor is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+
+[info 2019/02/27 13:25:12.481 PST <Test worker> tid=0xd] Bean 'org.springframework.data.gemfire.config.annotation.ContinuousQueryConfiguration' of type [org.springframework.data.gemfire.config.annotation.ContinuousQueryConfiguration$$EnhancerBySpringCGLIB$$4d63f367] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+[info 2019/02/27 13:25:13.388 PST <Test worker> tid=0xd] 
+---------------------------------------------------------------------------
+  
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with this
+  work for additional information regarding copyright ownership.
+   
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with the
+  License.  You may obtain a copy of the License at
+  
+  http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
+  License for the specific language governing permissions and limitations
+  under the License.
+  
+---------------------------------------------------------------------------
+Build-Date: 2017-09-16 07:20:46 -0700
+Build-Id: abaker 0
+Build-Java-Version: 1.8.0_121
+Build-Platform: Mac OS X 10.12.3 x86_64
+Product-Name: Apache Geode
+Product-Version: 1.2.1
+Source-Date: 2017-09-08 11:57:38 -0700
+Source-Repository: release/1.2.1
+Source-Revision: 0b881b515eb1dcea974f0f5c1b40da03d42af9cf
+Native version: native code unavailable
+Running on: /192.168.1.110, 12 cpu(s), x86_64 Mac OS X 10.13.6 
+Communications version: 65
+Process ID: 38249
+User: wlund
+Current dir: /Users/wlund/Dropbox/git-workspace/wxlund/spring-music-pcc
+Home dir: /Users/wlund
+Command Line Parameters:
+  -Dorg.gradle.native=false
+  -Xmx512m
+  -Dfile.encoding=UTF-8
+  -Duser.country=US
+  -Duser.language=en
+  -Duser.variant
+  -ea
+Class Path:
+  /Users/wlund/.gradle/caches/5.2/workerMain/gradle-worker.jar
+  /Users/wlund/Dropbox/git-workspace/wxlund/spring-music-pcc/build/classes/java/test
+  /Users/wlund/Dropbox/git-workspace/wxlund/spring-music-pcc/build/resources/test
+  /Users/wlund/Dropbox/git-workspace/wxlund/spring-music-pcc/build/classes/java/main
+  /Users/wlund/Dropbox/git-workspace/wxlund/spring-music-pcc/build/resources/main
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.0.6.RELEASE/e803fc341b450b2ce01734df12e5881b8e78c0a7/spring-boot-starter-web-2.0.6.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-actuator/2.0.6.RELEASE/e883ca43beebc8d1726346e647c5f74d223aefc6/spring-boot-starter-actuator-2.0.6.RELEASE.jar
+  /Users/wlund/.m2/repository/org/springframework/geode/spring-geode-starter/1.0.0.M3/spring-geode-starter-1.0.0.M3.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/2.0.6.RELEASE/f92fd015cfc9a9bd6ae653dca8d4ec5b83d4ba00/spring-boot-starter-test-2.0.6.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.0.6.RELEASE/1b3912af3eecdbbc6cda497acc7939f2ce21e39d/spring-boot-starter-json-2.0.6.RELEASE.jar
+  /Users/wlund/.m2/repository/org/springframework/geode/spring-geode-autoconfigure/1.0.0.M3/spring-geode-autoconfigure-1.0.0.M3.jar
+  /Users/wlund/.m2/repository/org/springframework/geode/spring-geode/1.0.0.M3/spring-geode-1.0.0.M3.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.0.6.RELEASE/9d904a4387e076343a3478c32198ec7d9d633ff4/spring-boot-starter-2.0.6.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-log4j2/2.0.6.RELEASE/a8df613b1287c8b3f70b320d1a9e362bba8c569d/spring-boot-starter-log4j2-2.0.6.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-spring-service-connector/2.0.1.RELEASE/5a114c00eb26b68b88a8c8d1948cadbd8d24d634/spring-cloud-spring-service-connector-2.0.1.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-cloudfoundry-connector/2.0.1.RELEASE/d723add3f7cd620235bb4b994551bb66fe9cffa0/spring-cloud-cloudfoundry-connector-2.0.1.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.webjars/angular-ui-bootstrap/0.10.0-1/36425a16aca739ff1123661fa763333142bdf311/angular-ui-bootstrap-0.10.0-1.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.webjars/bootstrap/3.1.1/a11ab29de60b76fa111a2ca583de57abdbbcad26/bootstrap-3.1.1.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.webjars/angular-ui/0.4.0-2/8deff747c57910574bfa757abce9e1873dc015ce/angular-ui-0.4.0-2.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.webjars/angularjs/1.2.16/2a2d9eb9506e014fca469f2669697474c777a8c2/angularjs-1.2.16.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.webjars/jquery/2.1.0-2/db1742ea52e14b25b7c4ab39d7a348324241567/jquery-2.1.0-2.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator-autoconfigure/2.0.6.RELEASE/416d0c6cd9e249f1f811e6d07edc09f68c9b1198/spring-boot-actuator-autoconfigure-2.0.6.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.0.6.RELEASE/b0eb15474e795850dfa59b01ee6a83d7a39e3645/spring-boot-test-autoconfigure-2.0.6.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.0.6.RELEASE/e8c88fd703dbdf79f94178a5018ad67d1ecb1d0d/spring-boot-autoconfigure-2.0.6.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/2.0.6.RELEASE/33a53ca6d55f35b3a89320c260262a5310ba8afc/spring-boot-test-2.0.6.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator/2.0.6.RELEASE/c71f18a214c99f719ac567c6e9547b43aed0d803/spring-boot-actuator-2.0.6.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.6.RELEASE/4d214b08bbc74f03d404e8fc862102334e0f73d1/spring-boot-2.0.6.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.0.6.RELEASE/64b22bc3d0ba734532e7cbe941354985f2a86242/spring-boot-starter-tomcat-2.0.6.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.3.2/934c04d3cfef185a8008e7bf34331b79730a9d43/javax.annotation-api-1.3.2.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.10.RELEASE/88a601321e2b4e3b84eed0909c24b9dd8e453b5f/spring-webmvc-5.0.10.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-geode/2.0.11.RELEASE/662c4177ea8ea7e358e3f92f8b779af8929e261e/spring-data-geode-2.0.11.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.10.RELEASE/fbaaa53ec99f45fd7aaf9125beeb5c3388cce088/spring-web-5.0.10.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.10.RELEASE/1d2d272073f36c689c693ec3ec94d7ad7e136a2e/spring-test-5.0.10.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/5.0.10.RELEASE/61b3159aceaae05118bfe2a7fcd4141921986a78/spring-context-support-5.0.10.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.10.RELEASE/6f53de0618219fefc2aebf92ba175e6b33e14ce0/spring-context-5.0.10.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.10.RELEASE/da65874f61aef9c25db794f493e50683346d3056/spring-aop-5.0.10.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.0.10.RELEASE/55608ae84fde15eb942d675e3b1ee7d30394d4cb/spring-tx-5.0.10.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.0.11.RELEASE/273e5cd5d6e772b5c4208b12771ed48647b2b9bb/spring-data-commons-2.0.11.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.10.RELEASE/8ec7da928082a123c50d5d70cd4b46382db27e8b/spring-beans-5.0.10.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.0.10.RELEASE/eaf8595e3bf18ef1aca1c233d9871552d258e38a/spring-expression-5.0.10.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.10.RELEASE/cb270a60ceb573961588f511222984de64b4bc96/spring-core-5.0.10.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.19/2d998d3d674b172a588e54ab619854d073f555b5/snakeyaml-1.19.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.hibernate.validator/hibernate-validator/6.0.13.Final/af4232bf90ecd33c71147d67185dbb1cfe8f33df/hibernate-validator-6.0.13.Final.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-core/1.0.7/f0e7ce9e6b3cc287fd1bfcfbaa4764b7102656a7/micrometer-core-1.0.7.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j-impl/2.10.0/8e4e0a30736175e31c7f714d95032c1734cfbdea/log4j-slf4j-impl-2.10.0.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.geode/geode-lucene/1.2.1/3d22a050bd4eb64bd8c82a74677f45c070f102d5/geode-lucene-1.2.1.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.geode/geode-core/1.2.1/fe853317e33dd2a1c291f29cee3c4be549f75a69/geode-core-1.2.1.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.10.0/c90b597163cd28ab6d9687edd53db601b6ea75a1/log4j-core-2.10.0.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-jul/2.10.0/6840029dc3669abc9fbb113b8f0e3710d6089012/log4j-jul-2.10.0.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.25/af5364cd6679bfffb114f0dec8a157aaa283b76/jul-to-slf4j-1.7.25.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-connectors-core/2.0.3.RELEASE/e46200f5f5ab26a37b88aa4b0c489b25ae65ed7b/spring-cloud-connectors-core-2.0.3.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.3/4785a3c21320980282f9f33d0d1264a69040538f/hamcrest-library-1.3.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.4.0/765a4401ceb2dc8d40553c2075eb80a8fa35c2ae/json-path-2.4.0.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.9.1/c5ce126b15f28d56cd8f960c1a6a058b9c9aea87/assertj-core-3.9.1.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.15.0/b84bfbbc29cd22c9529409627af6ea2897f4fa85/mockito-core-2.15.0.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.0/6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3/jsonassert-1.5.0.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.5.1/4ffdb346572a7356f7521cd3119ce5287d2e339d/xmlunit-core-2.5.1.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.10.RELEASE/8d6a766be91ae5613f2828eb9f77739a47ceb357/spring-jcl-5.0.10.RELEASE.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.9.7/98d8f190db07f97c64c0ea3af5792f718a6c2cc1/jackson-datatype-jdk8-2.9.7.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.9.7/cbd919f1ce67533e07b98dd493247e8dbabc26b2/jackson-datatype-jsr310-2.9.7.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.9.7/f2bdd7696beffa2dbc5dc62cd24c3906a40ffcff/jackson-module-parameter-names-2.9.7.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.7/e6faad47abd3179666e89068485a1b88a195ceb7/jackson-databind-2.9.7.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.5.34/5f86906367c2540b21e6aeecc277d2ce9ec939b0/tomcat-embed-websocket-8.5.34.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.34/a038040d68a90397f95dd1e11b979fe364a5000f/tomcat-embed-core-8.5.34.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.5.34/be71a9a5bdd001db7cf97c47429eec0bdd3b7b88/tomcat-embed-el-8.5.34.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/2.0.1.Final/cb855558e6271b1b32e716d24cb85c7f583ce09e/validation-api-2.0.1.Final.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.2.Final/3789d00e859632e6c6206adc0c71625559e6e3b0/jboss-logging-3.3.2.Final.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.4/3d5f48f10bbe4eb7bd862f10c0583be2e0053c6/classmate-1.3.4.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.hdrhistogram/HdrHistogram/2.1.10/9e1ac84eed220281841b75e72fb9de5a297fbf04/HdrHistogram-2.1.10.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.latencyutils/LatencyUtils/2.0.3/769c0b82cb2421c8256300e907298a9410a2a3d3/LatencyUtils-2.0.3.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.shiro/shiro-spring/1.3.2/281a6b565f6cf3aebd31ddb004632008d7106f2d/shiro-spring-1.3.2.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.shiro/shiro-web/1.3.2/725be023e1c65a0fd70c01b8c0c13a2936c23315/shiro-web-1.3.2.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.shiro/shiro-core/1.3.2/b5dede9d890f335998a8ebf479809fe365b927fc/shiro-core-1.3.2.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.10.0/fec5797a55b786184a537abd39c3fa1449d752d6/log4j-api-2.10.0.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.3/7396407491352ce4fa30de92efb158adb76b5b/json-smart-2.3.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.7.11/f02857a4e2c66ccbe7aaad6100a0a6c461bce9b3/byte-buddy-1.7.11.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.7.11/b425a8933ca07edd03c6dbc8bc3b595fba9780de/byte-buddy-agent-1.7.11.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.6/639033469776fd37c08358c6b92a4761feb2af4b/objenesis-2.6.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0/7c10d545325e3a6e72e06381afe469fd40eb701/jackson-annotations-2.9.0.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.7/4b7f0e0dc527fab032e9800ed231080fdc3ac015/jackson-core-2.9.7.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.geode/geode-cq/1.2.1/69873d6b956ba13b55c894a13e72106fb552e840/geode-cq-1.2.1.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.geode/geode-wan/1.2.1/df0dd8516e1af17790185255ff21a54b56d94344/geode-wan-1.2.1.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.13/ad94df2a28d658a40dc27bbaff6a1ce5fbf04e9b/aspectjweaver-1.8.13.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/1.2/c592b500269bfde36096641b01238a8350f8aa31/accessors-smart-1.2.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/com.github.stephenc.findbugs/findbugs-annotations/1.3.9-1/a6b11447635d80757d64b355bed3c00786d86801/findbugs-annotations-1.3.9-1.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.jgroups/jgroups/3.6.10.Final/fc0ff5a8a9de27ab62939956f705c2909bf86bc2/jgroups-3.6.10.Final.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.1.0/9835253257524c1be7ab50c057aa2d418fb72082/fastutil-7.1.0.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/javax.resource/javax.resource-api/1.7/ae40e0864eb1e92c48bf82a2a3399cbbf523fb79/javax.resource-api-1.7.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.5.2/35d000afbaa4ed425d91873b40f4df9b8236875b/jna-4.5.2.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.3/cdd846cfc4e0f7eefafc02c0f5dce32b9303aa2a/jopt-simple-5.0.3.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.3/c845703de334ddc6b4b3cd26835458cb1cba1f3d/commons-beanutils-1.9.3.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/io.github.lukehutch/fast-classpath-scanner/2.0.11/ae34a7a5e6de8ad1f86e12f6f7ae1869fcfe9987/fast-classpath-scanner-2.0.11.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.geode/geode-common/1.2.1/9db253081d33f424f6e3ce0cde4b306e23e3420b/geode-common-1.2.1.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.geode/geode-json/1.2.1/bdb4c262e4ce6bb3b22e0f511cfb133a65fa0c04/geode-json-1.2.1.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-analyzers-common/6.4.1/c6f0f593503080204e9d33189cdc59320f55db37/lucene-analyzers-common-6.4.1.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queryparser/6.4.1/1fc5795a072770a2c47dce11a3c85a80f3437af6/lucene-queryparser-6.4.1.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queries/6.4.1/6de41d984c16185a244b52c4d069b00f5b2b120f/lucene-queries-6.4.1.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/6.4.1/2a18924b9e0ed86b318902cb475a0b9ca4d7be5b/lucene-core-6.4.1.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.0.4/da08b8cce7bbf903602a25a3a163ae252435795/asm-5.0.4.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/javax.transaction/javax.transaction-api/1.2/d81aff979d603edd90dcd8db2abc1f4ce6479e3e/javax.transaction-api-1.2.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar
+  /Users/wlund/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar
+Library Path:
+  /Users/wlund/Library/Java/Extensions
+  /Library/Java/Extensions
+  /Network/Library/Java/Extensions
+  /System/Library/Java/Extensions
+  /usr/lib/java
+  .
+System Properties:
+    PID = 38249
+    awt.toolkit = sun.lwawt.macosx.LWCToolkit
+    file.encoding = UTF-8
+    file.separator = /
+    ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    gopherProxySet = false
+    http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+    java.awt.headless = true
+    java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+    java.class.version = 55.0
+    java.home = /Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
+    java.io.tmpdir = /var/folders/ns/cln1d9xd7kj9w18zdxvnvpd40000gn/T/
+    java.runtime.name = OpenJDK Runtime Environment
+    java.runtime.version = 11.0.2+9
+    java.specification.name = Java Platform API Specification
+    java.specification.vendor = Oracle Corporation
+    java.specification.version = 11
+    java.vendor = Oracle Corporation
+    java.vendor.url = http://java.oracle.com/
+    java.vendor.url.bug = http://bugreport.java.com/bugreport/
+    java.vendor.version = 18.9
+    java.version = 11.0.2
+    java.version.date = 2019-01-15
+    java.vm.compressedOopsMode = Zero based
+    java.vm.info = mixed mode
+    java.vm.name = OpenJDK 64-Bit Server VM
+    java.vm.specification.name = Java Virtual Machine Specification
+    java.vm.specification.vendor = Oracle Corporation
+    java.vm.specification.version = 11
+    java.vm.vendor = Oracle Corporation
+    java.vm.version = 11.0.2+9
+    jdk.debug = release
+    line.separator = 
+    org.gradle.native = false
+    org.gradle.test.worker = 1
+    os.version = 10.13.6
+    path.separator = :
+    socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+    spring.beaninfo.ignore = true
+    sun.arch.data.model = 64
+    sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib
+    sun.cpu.endian = little
+    sun.cpu.isalist = 
+    sun.io.unicode.encoding = UnicodeBig
+    sun.java.command = worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 1'
+    sun.java.launcher = SUN_STANDARD
+    sun.jnu.encoding = UTF-8
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    sun.nio.ch.bugLevel = 
+    sun.os.patch.level = unknown
+    user.country = US
+    user.language = en
+    user.timezone = America/Los_Angeles
+    user.variant = 
+Log4J 2 Configuration:
+    jar:file:/Users/wlund/.gradle/caches/modules-2/files-2.1/org.apache.geode/geode-core/1.2.1/fe853317e33dd2a1c291f29cee3c4be549f75a69/geode-core-1.2.1.jar!/log4j2.xml
+---------------------------------------------------------------------------
+
+
+[info 2019/02/27 13:25:13.475 PST <Test worker> tid=0xd] Running in client mode
+
+[info 2019/02/27 13:25:13.602 PST <Test worker> tid=0xd] Requesting cluster configuration
+
+[info 2019/02/27 13:25:13.629 PST <Test worker> tid=0xd] Loading previously deployed jars
+
+[warn 2019/02/27 13:25:13.678 PST <poolTimer-DEFAULT-2> tid=0x1f] Could not connect to: localhost:40404
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:591)
+	at org.apache.geode.internal.net.SocketCreator.connect(SocketCreator.java:996)
+	at org.apache.geode.internal.net.SocketCreator.connect(SocketCreator.java:937)
+	at org.apache.geode.internal.net.SocketCreator.connectForClient(SocketCreator.java:901)
+	at org.apache.geode.cache.client.internal.ConnectionImpl.connect(ConnectionImpl.java:103)
+	at org.apache.geode.cache.client.internal.ConnectionFactoryImpl.createClientToServerConnection(ConnectionFactoryImpl.java:136)
+	at org.apache.geode.cache.client.internal.ConnectionFactoryImpl.createClientToServerConnection(ConnectionFactoryImpl.java:259)
+	at org.apache.geode.cache.client.internal.pooling.ConnectionManagerImpl.prefillConnection(ConnectionManagerImpl.java:762)
+	at org.apache.geode.cache.client.internal.pooling.ConnectionManagerImpl.prefill(ConnectionManagerImpl.java:706)
+	at org.apache.geode.cache.client.internal.pooling.ConnectionManagerImpl$PrefillConnectionsTask.run2(ConnectionManagerImpl.java:854)
+	at org.apache.geode.cache.client.internal.PoolImpl$PoolTask.run(PoolImpl.java:1315)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+[warn 2019/02/27 13:25:13.678 PST <Test worker> tid=0xd] Could not connect to: localhost:40404
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:591)
+	at org.apache.geode.internal.net.SocketCreator.connect(SocketCreator.java:996)
+	at org.apache.geode.internal.net.SocketCreator.connect(SocketCreator.java:937)
+	at org.apache.geode.internal.net.SocketCreator.connectForClient(SocketCreator.java:901)
+	at org.apache.geode.cache.client.internal.ConnectionImpl.connect(ConnectionImpl.java:103)
+	at org.apache.geode.cache.client.internal.ConnectionFactoryImpl.createClientToServerConnection(ConnectionFactoryImpl.java:136)
+	at org.apache.geode.cache.client.internal.QueueManagerImpl.initializeConnections(QueueManagerImpl.java:466)
+	at org.apache.geode.cache.client.internal.QueueManagerImpl.start(QueueManagerImpl.java:303)
+	at org.apache.geode.cache.client.internal.PoolImpl.start(PoolImpl.java:343)
+	at org.apache.geode.cache.client.internal.PoolImpl.finishCreate(PoolImpl.java:173)
+	at org.apache.geode.cache.client.internal.PoolImpl.create(PoolImpl.java:159)
+	at org.apache.geode.internal.cache.PoolFactoryImpl.create(PoolFactoryImpl.java:321)
+	at org.apache.geode.internal.cache.GemFireCacheImpl.determineDefaultPool(GemFireCacheImpl.java:2922)
+	at org.apache.geode.internal.cache.GemFireCacheImpl.initializeDeclarativeCache(GemFireCacheImpl.java:1369)
+	at org.apache.geode.internal.cache.GemFireCacheImpl.initialize(GemFireCacheImpl.java:1195)
+	at org.apache.geode.internal.cache.GemFireCacheImpl.basicCreate(GemFireCacheImpl.java:758)
+	at org.apache.geode.internal.cache.GemFireCacheImpl.createClient(GemFireCacheImpl.java:731)
+	at org.apache.geode.cache.client.ClientCacheFactory.basicCreate(ClientCacheFactory.java:262)
+	at org.apache.geode.cache.client.ClientCacheFactory.create(ClientCacheFactory.java:212)
+	at org.springframework.data.gemfire.client.ClientCacheFactoryBean.createCache(ClientCacheFactoryBean.java:400)
+	at org.springframework.data.gemfire.CacheFactoryBean.resolveCache(CacheFactoryBean.java:316)
+	at org.springframework.data.gemfire.CacheFactoryBean.init(CacheFactoryBean.java:266)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at org.springframework.data.gemfire.CacheFactoryBean.getObject(CacheFactoryBean.java:768)
+	at org.springframework.data.gemfire.CacheFactoryBean.getObject(CacheFactoryBean.java:107)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:171)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1644)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1174)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:327)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:502)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1196)
+	at org.springframework.data.gemfire.repository.support.GemfireRepositoryFactoryBean.setApplicationContext(GemfireRepositoryFactoryBean.java:104)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:120)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:96)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1686)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:819)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:725)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1266)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+[error 2019/02/27 13:25:13.683 PST <Test worker> tid=0xd] Could not find any server to create primary client queue on. Number of excluded servers is 1 and exception is no exception.
+
+[error 2019/02/27 13:25:13.683 PST <Test worker> tid=0xd] Could not initialize a primary queue on startup. No queue servers available.
+
+[info 2019/02/27 13:25:13.685 PST <Test worker> tid=0xd] Pool DEFAULT started with multiuser-authentication=false
+
+[info 2019/02/27 13:25:13.699 PST <Test worker> tid=0xd] Connected to Distributed System [SpringBasedCacheClientApplication] as Member [wlundsmcpro2018(SpringBasedCacheClientApplication:38249:loner):0:47e0d830:SpringBasedCacheClientApplication] in Group(s) [[]] with Role(s) [[]] on Host [wlundsmcpro2018.nv.charter.com] having PID [38249]
+
+[info 2019/02/27 13:25:13.700 PST <Test worker> tid=0xd] Created new Apache Geode version [1.2.1] Cache [SpringBasedCacheClientApplication]
+
+[warn 2019/02/27 13:25:13.751 PST <Test worker> tid=0xd] Invalid JavaBean property 'regionConfigurers' being accessed! Ambiguous write methods found next to actually used [public void org.springframework.data.gemfire.config.annotation.support.CacheTypeAwareRegionFactoryBean.setRegionConfigurers(org.springframework.data.gemfire.config.annotation.RegionConfigurer[])]: [public void org.springframework.data.gemfire.config.annotation.support.CacheTypeAwareRegionFactoryBean.setRegionConfigurers(java.util.List)]
+
+[info 2019/02/27 13:25:13.752 PST <Test worker> tid=0xd] Falling back to creating Region [Album] in Cache [SpringBasedCacheClientApplication]
+
+[info 2019/02/27 13:25:13.754 PST <Test worker> tid=0xd] Falling back to creating Region [Album] in Cache [SpringBasedCacheClientApplication]
+
+[info 2019/02/27 13:25:13.763 PST <Test worker> tid=0xd] Created client Region [Album]
+
+[info 2019/02/27 13:25:14.264 PST <Test worker> tid=0xd] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+
+[info 2019/02/27 13:25:14.521 PST <Test worker> tid=0xd] Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@581abea4: startup date [Wed Feb 27 13:25:10 PST 2019]; root of context hierarchy
+
+[info 2019/02/27 13:25:14.588 PST <Test worker> tid=0xd] Mapped "{[/albums],methods=[PUT]}" onto public org.cloudfoundry.samples.music.domain.Album org.cloudfoundry.samples.music.web.AlbumController.add(org.cloudfoundry.samples.music.domain.Album)
+
+[info 2019/02/27 13:25:14.589 PST <Test worker> tid=0xd] Mapped "{[/albums],methods=[POST]}" onto public org.cloudfoundry.samples.music.domain.Album org.cloudfoundry.samples.music.web.AlbumController.update(org.cloudfoundry.samples.music.domain.Album)
+
+[info 2019/02/27 13:25:14.589 PST <Test worker> tid=0xd] Mapped "{[/albums/{id}],methods=[DELETE]}" onto public void org.cloudfoundry.samples.music.web.AlbumController.deleteById(java.lang.String)
+
+[info 2019/02/27 13:25:14.590 PST <Test worker> tid=0xd] Mapped "{[/albums],methods=[GET]}" onto public java.lang.Iterable<org.cloudfoundry.samples.music.domain.Album> org.cloudfoundry.samples.music.web.AlbumController.albums()
+
+[info 2019/02/27 13:25:14.590 PST <Test worker> tid=0xd] Mapped "{[/albums/{id}],methods=[GET]}" onto public org.cloudfoundry.samples.music.domain.Album org.cloudfoundry.samples.music.web.AlbumController.getById(java.lang.String)
+
+[info 2019/02/27 13:25:14.593 PST <Test worker> tid=0xd] Mapped "{[/errors/throw]}" onto public void org.cloudfoundry.samples.music.web.ErrorController.throwException()
+
+[info 2019/02/27 13:25:14.593 PST <Test worker> tid=0xd] Mapped "{[/errors/kill]}" onto public void org.cloudfoundry.samples.music.web.ErrorController.kill()
+
+[info 2019/02/27 13:25:14.593 PST <Test worker> tid=0xd] Mapped "{[/errors/fill-heap]}" onto public void org.cloudfoundry.samples.music.web.ErrorController.fillHeap()
+
+[info 2019/02/27 13:25:14.594 PST <Test worker> tid=0xd] Mapped "{[/appinfo]}" onto public org.cloudfoundry.samples.music.domain.ApplicationInfo org.cloudfoundry.samples.music.web.InfoController.info()
+
+[info 2019/02/27 13:25:14.594 PST <Test worker> tid=0xd] Mapped "{[/service]}" onto public java.util.List<org.springframework.cloud.service.ServiceInfo> org.cloudfoundry.samples.music.web.InfoController.showServiceInfo()
+
+[info 2019/02/27 13:25:14.597 PST <Test worker> tid=0xd] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+
+[info 2019/02/27 13:25:14.598 PST <Test worker> tid=0xd] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+
+[info 2019/02/27 13:25:14.630 PST <Test worker> tid=0xd] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+
+[info 2019/02/27 13:25:14.630 PST <Test worker> tid=0xd] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+
+[info 2019/02/27 13:25:14.677 PST <Test worker> tid=0xd] Adding welcome page: class path resource [static/index.html]
+
+[info 2019/02/27 13:25:15.323 PST <Test worker> tid=0xd] Exposing 14 endpoint(s) beneath base path '/actuator'
+
+[info 2019/02/27 13:25:15.334 PST <Test worker> tid=0xd] Mapped "{[/actuator/auditevents],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.335 PST <Test worker> tid=0xd] Mapped "{[/actuator/beans],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.335 PST <Test worker> tid=0xd] Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.336 PST <Test worker> tid=0xd] Mapped "{[/actuator/conditions],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.336 PST <Test worker> tid=0xd] Mapped "{[/actuator/configprops],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.336 PST <Test worker> tid=0xd] Mapped "{[/actuator/env],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.337 PST <Test worker> tid=0xd] Mapped "{[/actuator/env/{toMatch}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.337 PST <Test worker> tid=0xd] Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.338 PST <Test worker> tid=0xd] Mapped "{[/actuator/loggers/{name}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.338 PST <Test worker> tid=0xd] Mapped "{[/actuator/loggers/{name}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.339 PST <Test worker> tid=0xd] Mapped "{[/actuator/loggers],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.339 PST <Test worker> tid=0xd] Mapped "{[/actuator/heapdump],methods=[GET],produces=[application/octet-stream]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.340 PST <Test worker> tid=0xd] Mapped "{[/actuator/threaddump],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.340 PST <Test worker> tid=0xd] Mapped "{[/actuator/metrics/{requiredMetricName}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.341 PST <Test worker> tid=0xd] Mapped "{[/actuator/metrics],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.341 PST <Test worker> tid=0xd] Mapped "{[/actuator/scheduledtasks],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.342 PST <Test worker> tid=0xd] Mapped "{[/actuator/httptrace],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.342 PST <Test worker> tid=0xd] Mapped "{[/actuator/mappings],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+
+[info 2019/02/27 13:25:15.343 PST <Test worker> tid=0xd] Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+
+[info 2019/02/27 13:25:15.411 PST <Test worker> tid=0xd] Starting beans in phase 0
+
+[info 2019/02/27 13:25:15.412 PST <Test worker> tid=0xd] Starting beans in phase 2147483647
+
+[info 2019/02/27 13:25:15.424 PST <Test worker> tid=0xd] Started ApplicationTests in 4.822 seconds (JVM running for 6.501)
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

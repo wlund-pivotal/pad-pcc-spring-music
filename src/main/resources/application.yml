@@ -1,0 +1,61 @@
+---
+# Spring Boot application properties that are applied when the "pcc" Spring profile is enabled with
+#-Dspring.profiles.active=pcc
+spring:
+  profiles: pcc-local
+  data:
+    gemfire:
+      security:
+        username: pcc
+        password: test
+
+---
+# Spring Boot application properties that are applied when the "pcc" Spring profile is enabled with
+#-Dspring.profiles.active=pcc
+# Uses workaround for spring-starter-gemfire security issue. In future versions parse of vcap is not needed.
+spring:
+  profiles: pcc-cloud
+  data:
+    gemfire:
+      security:
+        username: ${vcap.services.spring-music-pcc.credentials.users[0].username}
+        password: ${vcap.services.spring-music-pcc.credentials.users[0].password}
+
+---
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+---
+# Spring Boot application properties that are applied when the "mysql" Spring profile is enabled with
+#-Dspring.profiles.active=mysql
+spring:
+  profiles: mysql
+  datasource:
+    url: "jdbc:mysql://localhost/music"
+    driver-class-name: com.mysql.jdbc.Driver
+    username:
+    password:
+  jpa:
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL55Dialect
+
+---
+# Spring Boot application properties that are applied when the "postgres" Spring profile is enabled with
+#-Dspring.profiles.active=postgres
+spring:
+  profiles: postgres
+  datasource:
+    url: "jdbc:postgresql://localhost/music"
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password:
+  jpa:
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.ProgressDialect
